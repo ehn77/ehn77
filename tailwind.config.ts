@@ -1,6 +1,7 @@
-const { fontFamily } = require('tailwindcss/defaultTheme');
+// tailwind.config.ts
+import { fontFamily } from 'tailwindcss/defaultTheme';
 
-module.exports = {
+export default {
   content: [
     './app/**/*.{js,ts,jsx,tsx}',
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -9,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-malven)', ...fontFamily.sans],
+        sans: ['MalvenRegular', ...fontFamily.sans],
       },
     },
   },

@@ -1,3 +1,4 @@
+/* global.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,34 +15,8 @@
   }
 }
 
-/* Importing Nordique Pro Bold font */
-@font-face {
-  font-family: 'Nordique Pro';
-  src: url('fonts/fonnts.com-Nordique_Pro_Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Morguns';
-  src: url('fonts/Morguns-Condensed.ttf') format('truetype');
-  font-style:normal;
-  font-weight:normal;
-}
-
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Morguns'; /* Using Nordique Pro as the primary font */
-}
-
-/* Optional: Custom class to apply Nordique Pro specifically */
-.font-nordique {
-  font-family: 'Nordique Pro';
-  font-weight: bold; /* Ensures bold weight is applied */
-}
-
-.morguns {
-  font-family: 'Morguns';
-  font-weight: bold;
+  font-family: 'MalvenRegular', sans-serif;
 }

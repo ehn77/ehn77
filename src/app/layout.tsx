@@ -1,3 +1,4 @@
+// app/layout.tsx
 import localFont from 'next/font/local';
 
 const malven = localFont({
@@ -8,12 +9,11 @@ const malven = localFont({
       style: 'normal',
     },
   ],
-  variable: '--font-malven',
 });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${malven.variable} font-sans`}>
+    <html lang="en" className={malven.className}>
       <body>{children}</body>
     </html>
   );
